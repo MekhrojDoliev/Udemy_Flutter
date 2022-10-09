@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Stack(
+            fit: StackFit.expand,
             children: <Widget>[
               Image(
                 image: AssetImage("assets/images/bg.jpg"),
