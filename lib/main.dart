@@ -14,6 +14,35 @@ class MyFirstApp extends StatelessWidget {
           title: Text("My first App"),
           centerTitle: true,
         ),
+        body: Center(
+          child: Container(
+            padding: EdgeInsets.all(16),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                LinearProgressIndicator(value: 23),
+                Text(
+                  "23 %",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  "Press the button to download",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: null,
+          child: Icon(Icons.cloud_download),
+        ),
       ),
     );
   }
