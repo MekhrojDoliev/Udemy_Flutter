@@ -13,15 +13,12 @@ class MyApp extends StatelessWidget {
           title: Text("Layout Widgets"),
           centerTitle: true,
         ),
-        body: Padding(
-          padding: EdgeInsets.only(left: 100,top: 150),
+        body: Center(
           child: Text(
-          "Hello Flutter",
-          style: TextStyle(fontSize: 30),
+            "Hello flutter !",
+            style: TextStyle(fontSize: 30),
+          ),
         ),
-        ),
-        
-        
       ),
     );
   }
