@@ -13,9 +13,18 @@ class MyApp extends StatelessWidget {
           title: Text("Layout Widgets"),
           centerTitle: true,
         ),
-        body: Center(
-          child: Text(
-            "Hello flutter !",
+        body: Container(
+          decoration: BoxDecoration(
+            color: Colors.amber,
+            border: Border.all(),
+          ),
+          width: 200,
+          height: 100,
+          padding: EdgeInsets.all(16),
+          margin: EdgeInsets.all(30),
+          alignment: Alignment.center,
+                    child: Text(
+            "Hello flutter",
             style: TextStyle(fontSize: 30),
           ),
         ),
